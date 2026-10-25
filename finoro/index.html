@@ -4,43 +4,117 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Finoro – Haushaltsbuch</title>
+  <meta name="description" content="Finoro: Haushaltsbuch auf deinem eigenen Server – Einnahmen, Ausgaben, Budgets und Kredite.">
+  <meta name="theme-color" content="#0d1410">
+  <link rel="preload" href="/assets/fonts/geist-variable.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/style.css">
+  <script src="/assets/site.js"></script>
 </head>
 <body>
-  <header class="site">
-    <div class="wrap">
-      <a class="brand" href="/">Saez24</a>
-      <nav><a href="/frequenzo/">Frequenzo</a><a href="/streamy/">Streamy</a><a href="/finoro/">Finoro</a></nav>
-    </div>
-  </header>
-  <main>
-    <div class="wrap">
-      <div class="app-head">
-        <img src="/assets/finoro.png" alt="">
-        <h1>Finoro</h1>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+  <nav class="nav" aria-label="Hauptnavigation">
+    <div class="nav__inner">
+      <a class="nav__logo" href="/" aria-label="Saez24, Startseite">
+        <span class="nav__logo-mark" aria-hidden="true">S</span>
+        <span class="nav__logo-text">Saez24</span>
+      </a>
+      <div class="nav__links"><a class="nav__link" href="/frequenzo/">Frequenzo</a><a class="nav__link" href="/streamy/">Streamy</a><a class="nav__link" href="/finoro/" aria-current="page">Finoro</a><a class="nav__link" href="/#projekte">Projekte</a></div>
+      <div class="nav__actions">
+        <a class="nav__icon-btn nav__ext" href="https://github.com/Saez24" aria-label="GitHub" title="GitHub"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.467-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.4 3-.405 1.02.005 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+        <a class="nav__icon-btn nav__ext" href="https://your-developer.de/" aria-label="Portfolio" title="Portfolio"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm6.93 6h-2.95a15.65 15.65 0 0 0-1.38-3.56A8.03 8.03 0 0 1 18.93 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14A8.2 8.2 0 0 1 4 12c0-.69.1-1.36.26-2h3.38a16.5 16.5 0 0 0 0 4H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56A7.99 7.99 0 0 1 5.08 16zm2.95-8H5.08a7.99 7.99 0 0 1 4.33-3.56A15.65 15.65 0 0 0 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66a14.7 14.7 0 0 1 0-4h4.68a14.7 14.7 0 0 1 0 4zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56zM16.36 14a16.5 16.5 0 0 0 0-4h3.38a8.2 8.2 0 0 1 0 4h-3.38z"/></svg></a>
+        <button class="nav__icon-btn nav__theme" type="button" aria-label="Design wechseln"><svg class="icon icon--sun" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zM2 13h2a1 1 0 0 0 0-2H2a1 1 0 0 0 0 2zm18 0h2a1 1 0 0 0 0-2h-2a1 1 0 0 0 0 2zM11 2v2a1 1 0 0 0 2 0V2a1 1 0 0 0-2 0zm0 18v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-2 0zM5.99 4.58a1 1 0 0 0-1.41 1.41l1.06 1.06a1 1 0 0 0 1.41-1.41L5.99 4.58zm12.37 12.37a1 1 0 0 0-1.41 1.41l1.06 1.06a1 1 0 0 0 1.41-1.41l-1.06-1.06zm1.06-10.96a1 1 0 0 0-1.41-1.41l-1.06 1.06a1 1 0 0 0 1.41 1.41l1.06-1.06zM7.05 18.36a1 1 0 0 0-1.41-1.41l-1.06 1.06a1 1 0 0 0 1.41 1.41l1.06-1.06z"/></svg><svg class="icon icon--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.39 5.39 0 0 1-4.4 2.26 5.4 5.4 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg></button>
+        <button class="nav__icon-btn nav__hamburger" type="button" aria-label="Navigation öffnen" aria-expanded="false" aria-controls="nav-drawer"><svg class="icon icon--menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg><svg class="icon icon--close" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></button>
       </div>
-      <p class="lead">Dein Haushaltsbuch auf deinem eigenen Server – Einnahmen, Ausgaben, Budgets und Kredite im Blick, ganz ohne Cloud.</p>
-      <div class="actions">
-        <a href="/finoro/datenschutz.html">Datenschutz</a>
-      </div>
-      <h2>Was Finoro kann</h2>
-      <ul>
-        <li><strong>Übersicht</strong> – Gesamtvermögen, Konten, Monatsbilanz und Diagramme; Kacheln frei anordnen</li>
-        <li><strong>Buchungen</strong> – Einnahmen, Ausgaben, Umbuchungen und wiederkehrende Buchungen</li>
-        <li><strong>Budgets</strong> je Kategorie, monatlich oder jährlich</li>
-        <li><strong>Kredite</strong> – Rate, Ratenplan und Restschuld automatisch</li>
-        <li><strong>Import und Export</strong> als CSV oder XML</li>
-        <li><strong>Im Browser und als Android-App</strong> – lokal auf dem Gerät oder verbunden mit deinem Server, optional mit Fingerabdruck-Sperre</li>
-      </ul>
-      <p class="muted">Downloads folgen.</p>
     </div>
+    <div class="nav__drawer" id="nav-drawer" hidden>
+      <a class="nav__link" href="/frequenzo/">Frequenzo</a><a class="nav__link" href="/streamy/">Streamy</a><a class="nav__link" href="/finoro/" aria-current="page">Finoro</a><a class="nav__link" href="/#projekte">Projekte</a>
+      <a class="nav__link" href="https://github.com/Saez24">GitHub</a>
+      <a class="nav__link" href="https://your-developer.de/">Portfolio</a>
+    </div>
+  </nav>
+  <main id="main">
+    <section class="page" aria-label="Finoro">
+      <div class="container">
+        <div class="bento hero__bento">
+          <article class="tile tile--accent hero-avatar col-4 row-3" aria-hidden="true">
+            <img class="hero-avatar__icon" src="/assets/finoro.png" alt="" width="168" height="168">
+            <div class="hero-avatar__corner">Web · Android</div>
+          </article>
+          <article class="tile hero-intro col-8 row-3">
+            <span class="eyebrow">App von Saez24</span>
+            <h1 class="display hero-intro__title">Finoro</h1>
+            <p class="hero-intro__sub">Dein Haushaltsbuch auf deinem eigenen Server – Einnahmen, Ausgaben, Budgets und Kredite im Blick, ganz ohne Cloud.</p>
+            <div class="actions">
+              <span class="status-dot status-dot--progress">Downloads folgen</span>
+              <a class="btn btn--ghost" href="/finoro/datenschutz.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>Datenschutz</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="features">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow">Funktionen</span>
+          <h2 class="title" id="features">Was Finoro kann</h2>
+        </header>
+        <div class="bento">
+          <article class="tile col-4">
+            <span class="tile__label">01</span>
+            <h3 class="feature__title">Übersicht</h3>
+            <p class="tile__text">Gesamtvermögen, Konten, Monatsbilanz und Diagramme; Kacheln frei anordnen.</p>
+          </article>
+          <article class="tile tile--sage col-4">
+            <span class="tile__label">02</span>
+            <h3 class="feature__title">Buchungen</h3>
+            <p class="tile__text">Einnahmen, Ausgaben, Umbuchungen und wiederkehrende Buchungen.</p>
+          </article>
+          <article class="tile col-4">
+            <span class="tile__label">03</span>
+            <h3 class="feature__title">Budgets</h3>
+            <p class="tile__text">Je Kategorie, monatlich oder jährlich.</p>
+          </article>
+          <article class="tile col-4">
+            <span class="tile__label">04</span>
+            <h3 class="feature__title">Kredite</h3>
+            <p class="tile__text">Rate, Ratenplan und Restschuld automatisch.</p>
+          </article>
+          <article class="tile tile--sage col-4">
+            <span class="tile__label">05</span>
+            <h3 class="feature__title">Import und Export</h3>
+            <p class="tile__text">Als CSV oder XML.</p>
+          </article>
+          <article class="tile col-4">
+            <span class="tile__label">06</span>
+            <h3 class="feature__title">Browser und Android</h3>
+            <p class="tile__text">Lokal auf dem Gerät oder verbunden mit deinem Server, optional mit Fingerabdruck-Sperre.</p>
+          </article>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="site">
-    <div class="wrap">
-      <span>© 2026 Saez24</span>
-      <a href="/impressum.html">Impressum</a>
-      <a href="/datenschutz.html">Datenschutz</a>
-      <a href="https://github.com/Saez24">GitHub</a>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__brand">
+          <span class="footer__logo-dot" aria-hidden="true"></span>
+          <span class="footer__brand-name">Saez24</span>
+          <span>· Kleine Apps ohne Tracking.</span>
+        </div>
+        <div class="footer__channels">
+          <a class="footer__channel" href="https://github.com/Saez24" aria-label="GitHub" title="GitHub"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.467-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.4 3-.405 1.02.005 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+          <a class="footer__channel" href="https://your-developer.de/" aria-label="Portfolio" title="Portfolio"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm6.93 6h-2.95a15.65 15.65 0 0 0-1.38-3.56A8.03 8.03 0 0 1 18.93 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14A8.2 8.2 0 0 1 4 12c0-.69.1-1.36.26-2h3.38a16.5 16.5 0 0 0 0 4H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56A7.99 7.99 0 0 1 5.08 16zm2.95-8H5.08a7.99 7.99 0 0 1 4.33-3.56A15.65 15.65 0 0 0 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66a14.7 14.7 0 0 1 0-4h4.68a14.7 14.7 0 0 1 0 4zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56zM16.36 14a16.5 16.5 0 0 0 0-4h3.38a8.2 8.2 0 0 1 0 4h-3.38z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Saez24</span>
+        <nav class="footer__legal" aria-label="Rechtliches">
+          <a href="/datenschutz.html">Datenschutz</a>
+          <span class="footer__sep" aria-hidden="true">·</span>
+          <a href="https://your-developer.de/">Portfolio</a>
+        </nav>
+      </div>
     </div>
   </footer>
 </body>

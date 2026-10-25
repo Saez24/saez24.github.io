@@ -4,46 +4,202 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Saez24 – Apps</title>
-  <meta name="description" content="Frequenzo, Streamy und Finoro – Apps von Saez24: Infos, Downloads und Datenschutz.">
+  <meta name="description" content="Frequenzo, Streamy und Finoro – Apps von Saez24: Infos, Downloads und Datenschutz. Dazu weitere Projekte aus dem Portfolio.">
+  <meta name="theme-color" content="#0d1410">
+  <link rel="preload" href="/assets/fonts/geist-variable.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/style.css">
+  <script src="/assets/site.js"></script>
 </head>
 <body>
-  <header class="site">
-    <div class="wrap">
-      <a class="brand" href="/">Saez24</a>
-      <nav><a href="/frequenzo/">Frequenzo</a><a href="/streamy/">Streamy</a><a href="/finoro/">Finoro</a></nav>
-    </div>
-  </header>
-  <main>
-    <div class="wrap">
-      <h1>Apps von Saez24</h1>
-      <p class="lead">Kleine, werbefreie Apps ohne Tracking. Deine Daten bleiben bei dir –
-        auf deinem Gerät oder auf deinem eigenen Server.</p>
-      <div class="apps">
-        <a class="card" href="/frequenzo/">
-          <img src="/assets/frequenzo.png" alt="">
-          <h2>Frequenzo</h2>
-          <p>Internetradio aus aller Welt – ohne Konto, ohne Werbung. Für Android und im Browser.</p>
-        </a>
-        <a class="card" href="/streamy/">
-          <img src="/assets/streamy.png" alt="">
-          <h2>Streamy</h2>
-          <p>Selbst gehosteter IPTV-Player für deine eigenen Zugänge – im Browser, auf dem Handy und am Fernseher.</p>
-        </a>
-        <a class="card" href="/finoro/">
-          <img src="/assets/finoro.png" alt="">
-          <h2>Finoro</h2>
-          <p>Haushaltsbuch auf deinem eigenen Server – Einnahmen, Ausgaben, Budgets und Kredite im Blick.</p>
-        </a>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+  <nav class="nav" aria-label="Hauptnavigation">
+    <div class="nav__inner">
+      <a class="nav__logo" href="/" aria-label="Saez24, Startseite">
+        <span class="nav__logo-mark" aria-hidden="true">S</span>
+        <span class="nav__logo-text">Saez24</span>
+      </a>
+      <div class="nav__links"><a class="nav__link" href="/frequenzo/">Frequenzo</a><a class="nav__link" href="/streamy/">Streamy</a><a class="nav__link" href="/finoro/">Finoro</a><a class="nav__link" href="/#projekte">Projekte</a></div>
+      <div class="nav__actions">
+        <a class="nav__icon-btn nav__ext" href="https://github.com/Saez24" aria-label="GitHub" title="GitHub"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.467-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.4 3-.405 1.02.005 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+        <a class="nav__icon-btn nav__ext" href="https://your-developer.de/" aria-label="Portfolio" title="Portfolio"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm6.93 6h-2.95a15.65 15.65 0 0 0-1.38-3.56A8.03 8.03 0 0 1 18.93 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14A8.2 8.2 0 0 1 4 12c0-.69.1-1.36.26-2h3.38a16.5 16.5 0 0 0 0 4H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56A7.99 7.99 0 0 1 5.08 16zm2.95-8H5.08a7.99 7.99 0 0 1 4.33-3.56A15.65 15.65 0 0 0 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66a14.7 14.7 0 0 1 0-4h4.68a14.7 14.7 0 0 1 0 4zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56zM16.36 14a16.5 16.5 0 0 0 0-4h3.38a8.2 8.2 0 0 1 0 4h-3.38z"/></svg></a>
+        <button class="nav__icon-btn nav__theme" type="button" aria-label="Design wechseln"><svg class="icon icon--sun" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zM2 13h2a1 1 0 0 0 0-2H2a1 1 0 0 0 0 2zm18 0h2a1 1 0 0 0 0-2h-2a1 1 0 0 0 0 2zM11 2v2a1 1 0 0 0 2 0V2a1 1 0 0 0-2 0zm0 18v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-2 0zM5.99 4.58a1 1 0 0 0-1.41 1.41l1.06 1.06a1 1 0 0 0 1.41-1.41L5.99 4.58zm12.37 12.37a1 1 0 0 0-1.41 1.41l1.06 1.06a1 1 0 0 0 1.41-1.41l-1.06-1.06zm1.06-10.96a1 1 0 0 0-1.41-1.41l-1.06 1.06a1 1 0 0 0 1.41 1.41l1.06-1.06zM7.05 18.36a1 1 0 0 0-1.41-1.41l-1.06 1.06a1 1 0 0 0 1.41 1.41l1.06-1.06z"/></svg><svg class="icon icon--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.39 5.39 0 0 1-4.4 2.26 5.4 5.4 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg></button>
+        <button class="nav__icon-btn nav__hamburger" type="button" aria-label="Navigation öffnen" aria-expanded="false" aria-controls="nav-drawer"><svg class="icon icon--menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg><svg class="icon icon--close" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></button>
       </div>
     </div>
+    <div class="nav__drawer" id="nav-drawer" hidden>
+      <a class="nav__link" href="/frequenzo/">Frequenzo</a><a class="nav__link" href="/streamy/">Streamy</a><a class="nav__link" href="/finoro/">Finoro</a><a class="nav__link" href="/#projekte">Projekte</a>
+      <a class="nav__link" href="https://github.com/Saez24">GitHub</a>
+      <a class="nav__link" href="https://your-developer.de/">Portfolio</a>
+    </div>
+  </nav>
+  <main id="main">
+    <section class="page" aria-label="Einleitung">
+      <div class="container">
+        <div class="bento hero__bento">
+          <article class="tile tile--accent hero-avatar col-4 row-3" aria-hidden="true">
+            <div class="hero-avatar__mark">S</div>
+            <div class="hero-avatar__corner">Apps '26</div>
+          </article>
+          <article class="tile hero-intro col-8 row-3">
+            <span class="eyebrow">Apps von Saez24</span>
+            <h1 class="display hero-intro__title">Kleine Apps, <span class="hero-intro__accent">ohne Tracking.</span></h1>
+            <p class="hero-intro__sub">Kleine, werbefreie Apps ohne Tracking. Deine Daten bleiben bei dir –
+              auf deinem Gerät oder auf deinem eigenen Server.</p>
+            <div class="actions">
+              <a class="btn btn--primary" href="#apps">Apps ansehen<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"/></svg></a>
+              <a class="btn btn--ghost" href="https://your-developer.de/">Portfolio</a>
+            </div>
+          </article>
+          <article class="tile tile--sage col-3 row-2">
+            <span class="tile__label">Status</span>
+            <div class="hero-status">
+              <span class="pulse-dot" aria-hidden="true"></span>
+              <span class="hero-status__text">7 Projekte</span>
+            </div>
+            <p class="hero-hint">3 eigene Apps und 4 Web-Projekte aus dem Portfolio.</p>
+          </article>
+          <article class="tile tile--warm col-4 row-2">
+            <span class="tile__label">Prinzip</span>
+            <p class="tile__value">Keine Werbung, keine Konten, kein Tracking.</p>
+            <div class="tile__corner" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg></div>
+          </article>
+          <article class="tile tile--strong col-5 row-2 md-full">
+            <span class="tile__label">Läuft auf</span>
+            <ul class="chips" role="list">
+              <li class="chip">Android</li><li class="chip">Browser</li><li class="chip">Android-TV</li>
+              <li class="chip">Android Auto</li><li class="chip">Eigener Server</li>
+            </ul>
+            <p class="hero-hint">Downloads direkt von GitHub – ohne App-Store-Konto.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="apps" class="section">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow">Die Apps</span>
+          <h2 class="display">Was ich gebaut habe.</h2>
+          <p class="section__sub">Infos, Downloads und Datenschutz zu jeder App.</p>
+        </header>
+        <div class="bento">
+        <article class="tile project-tile col-4 row-3">
+          <div class="project-tile__visual"><img src="/assets/frequenzo.png" alt="" width="88" height="88"></div>
+          <div class="project-tile__statuses"><span class="status-dot status-dot--live">Live</span></div>
+          <div class="project-tile__body">
+            <h3 class="title project-tile__title"><a href="/frequenzo/">Frequenzo</a></h3>
+            <p class="project-tile__desc">Internetradio aus aller Welt – ohne Konto, ohne Werbung. Für Android und im Browser.</p>
+          </div>
+          <ul class="chips" role="list"><li class="chip">Android</li><li class="chip">Web</li><li class="chip">Android Auto</li></ul>
+          <div class="actions">
+            <a class="btn btn--primary" href="/frequenzo/">Details<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"/></svg></a>
+            <a class="btn btn--ghost" href="https://github.com/Saez24/Frequenzo-App/releases/latest"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"/></svg>Download</a>
+          </div>
+        </article>
+        <article class="tile project-tile col-4 row-3 tile--sage">
+          <div class="project-tile__visual"><img src="/assets/streamy.png" alt="" width="88" height="88"></div>
+          <div class="project-tile__statuses"><span class="status-dot status-dot--live">Live</span><span class="status-dot status-dot--progress">In Arbeit</span></div>
+          <div class="project-tile__body">
+            <h3 class="title project-tile__title"><a href="/streamy/">Streamy</a></h3>
+            <p class="project-tile__desc">Selbst gehosteter IPTV-Player für deine eigenen Zugänge – im Browser, auf dem Handy und am Fernseher.</p>
+          </div>
+          <ul class="chips" role="list"><li class="chip">Web-App</li><li class="chip">Android</li><li class="chip">Android-TV</li><li class="chip">Self-hosted</li></ul>
+          <div class="actions">
+            <a class="btn btn--primary" href="/streamy/">Details<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"/></svg></a>
+            <a class="btn btn--ghost" href="https://github.com/Saez24/Streamy-App/releases"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"/></svg>Downloads</a>
+          </div>
+        </article>
+        <article class="tile project-tile col-4 row-3 tile--strong">
+          <div class="project-tile__visual"><img src="/assets/finoro.png" alt="" width="88" height="88"></div>
+          <div class="project-tile__statuses"><span class="status-dot status-dot--progress">In Arbeit</span></div>
+          <div class="project-tile__body">
+            <h3 class="title project-tile__title"><a href="/finoro/">Finoro</a></h3>
+            <p class="project-tile__desc">Haushaltsbuch auf deinem eigenen Server – Einnahmen, Ausgaben, Budgets und Kredite im Blick.</p>
+          </div>
+          <ul class="chips" role="list"><li class="chip">Web</li><li class="chip">Android</li><li class="chip">Self-hosted</li></ul>
+          <div class="actions">
+            <a class="btn btn--primary" href="/finoro/">Details<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"/></svg></a>
+            
+          </div>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projekte" class="section">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow">Weitere Projekte</span>
+          <h2 class="display">Aus dem Portfolio.</h2>
+          <p class="section__sub">Web-Apps und Websites, die ich gebaut habe. Mehr auf
+            <a class="link" href="https://your-developer.de/">your-developer.de</a> und GitHub.</p>
+        </header>
+        <div class="bento">
+        <article class="tile project-tile col-8 row-3 tile--sage">
+          <div class="project-tile__visual project-tile__visual--shot"><img src="/assets/projects/dataforge.png" alt="Screenshot von DataForge" loading="lazy"></div>
+          <div class="project-tile__statuses"><span class="status-dot status-dot--live">Live</span><span class="status-dot status-dot--progress">In Arbeit</span></div>
+          <div class="project-tile__body">
+            <h3 class="title project-tile__title"><a href="https://dataforge.your-developer.de">DataForge</a></h3>
+            <p class="project-tile__desc">Browser-basiertes ETL-Werkzeug für Finance-Teams. Importiert, transformiert, validiert und exportiert Finanzdaten. Komplett client-seitig, ohne Uploads.</p>
+          </div>
+          <ul class="chips" role="list"><li class="chip">Angular</li><li class="chip">TypeScript</li><li class="chip">IndexedDB</li><li class="chip">Web Workers</li></ul>
+          <div class="actions"><a class="btn btn--primary" href="https://dataforge.your-developer.de">Ansehen<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"/></svg></a></div>
+        </article>
+        <article class="tile project-tile col-4 row-3 tile--warm">
+          <div class="project-tile__visual project-tile__visual--shot"><img src="/assets/projects/pokedex.png" alt="Screenshot von PokéDex Fullstack" loading="lazy"></div>
+          <div class="project-tile__statuses"><span class="status-dot status-dot--live">Live</span><span class="status-dot status-dot--progress">In Arbeit</span></div>
+          <div class="project-tile__body">
+            <h3 class="title project-tile__title"><a href="https://github.com/Saez24/PokeDex_Full">PokéDex Fullstack</a></h3>
+            <p class="project-tile__desc">Moderne Pokémon-Referenz-App. Angular-Frontend + FastAPI-Backend, das PokéAPI-Daten lokal cached. Stats, Entwicklungs-Ketten, Movesets, Typ-Matchups, Team-Builder und Vergleichsmodus für bis zu vier Pokémon.</p>
+          </div>
+          <ul class="chips" role="list"><li class="chip">Angular</li><li class="chip">FastAPI</li><li class="chip">PostgreSQL</li><li class="chip">Redis</li><li class="chip">Docker</li></ul>
+          <div class="actions"><a class="btn btn--code" href="https://github.com/Saez24/PokeDex_Full"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.4 16.6 4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0 4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>Code</a></div>
+        </article>
+        <article class="tile project-tile col-4 row-3 tile--sage">
+          <div class="project-tile__visual project-tile__visual--shot"><img src="/assets/projects/beauty-landing.png" alt="Screenshot von Beauty Landing" loading="lazy"></div>
+          <div class="project-tile__statuses"><span class="status-dot status-dot--live">Live</span></div>
+          <div class="project-tile__body">
+            <h3 class="title project-tile__title"><a href="https://makeupartist-irinabolinger.de/">Beauty Landing</a></h3>
+            <p class="project-tile__desc">Landing Page für einen Kunden aus der Beauty-Branche. Angular-basiert, fokussiert auf klare Markenpräsenz, schnelle Ladezeiten und mobile Conversion.</p>
+          </div>
+          <ul class="chips" role="list"><li class="chip">Angular</li><li class="chip">TypeScript</li><li class="chip">SCSS</li></ul>
+          <div class="actions"><a class="btn btn--primary" href="https://makeupartist-irinabolinger.de/">Ansehen<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"/></svg></a></div>
+        </article>
+        <article class="tile project-tile col-8 row-3">
+          <div class="project-tile__visual project-tile__visual--shot"><img src="/assets/projects/meterflow.png" alt="Screenshot von MeterFlow" loading="lazy"></div>
+          <div class="project-tile__statuses"><span class="status-dot status-dot--live">Live</span></div>
+          <div class="project-tile__body">
+            <h3 class="title project-tile__title"><a href="https://meterflow.your-developer.de/">MeterFlow</a></h3>
+            <p class="project-tile__desc">Web-App zur Erfassung und Auswertung von Energiezählerständen: Strom, Gas, Wasser, Solar und Heizöl auf einen Blick. Dashboard mit Jahres- und Monatsübersicht, automatische kWh-Umrechnung, Budget-Alerts und Tarif-Historie.</p>
+          </div>
+          <ul class="chips" role="list"><li class="chip">Angular</li><li class="chip">Angular Material</li><li class="chip">Chart.js</li><li class="chip">Supabase</li><li class="chip">Docker</li></ul>
+          <div class="actions"><a class="btn btn--primary" href="https://meterflow.your-developer.de/">Ansehen<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"/></svg></a><a class="btn btn--code" href="https://github.com/Saez24/MeterFlow"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.4 16.6 4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0 4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>Code</a></div>
+        </article>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="site">
-    <div class="wrap">
-      <span>© 2026 Saez24</span>
-      <a href="/impressum.html">Impressum</a>
-      <a href="/datenschutz.html">Datenschutz</a>
-      <a href="https://github.com/Saez24">GitHub</a>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__brand">
+          <span class="footer__logo-dot" aria-hidden="true"></span>
+          <span class="footer__brand-name">Saez24</span>
+          <span>· Kleine Apps ohne Tracking.</span>
+        </div>
+        <div class="footer__channels">
+          <a class="footer__channel" href="https://github.com/Saez24" aria-label="GitHub" title="GitHub"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.467-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.4 3-.405 1.02.005 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+          <a class="footer__channel" href="https://your-developer.de/" aria-label="Portfolio" title="Portfolio"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm6.93 6h-2.95a15.65 15.65 0 0 0-1.38-3.56A8.03 8.03 0 0 1 18.93 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14A8.2 8.2 0 0 1 4 12c0-.69.1-1.36.26-2h3.38a16.5 16.5 0 0 0 0 4H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56A7.99 7.99 0 0 1 5.08 16zm2.95-8H5.08a7.99 7.99 0 0 1 4.33-3.56A15.65 15.65 0 0 0 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66a14.7 14.7 0 0 1 0-4h4.68a14.7 14.7 0 0 1 0 4zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56zM16.36 14a16.5 16.5 0 0 0 0-4h3.38a8.2 8.2 0 0 1 0 4h-3.38z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Saez24</span>
+        <nav class="footer__legal" aria-label="Rechtliches">
+          <a href="/datenschutz.html">Datenschutz</a>
+          <span class="footer__sep" aria-hidden="true">·</span>
+          <a href="https://your-developer.de/">Portfolio</a>
+        </nav>
+      </div>
     </div>
   </footer>
 </body>
