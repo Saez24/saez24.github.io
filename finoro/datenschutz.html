@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Datenschutz – Finoro</title>
+  <title>Datenschutzerklärung – Finoro</title>
   <meta name="theme-color" content="#0d1410">
   <link rel="preload" href="/assets/fonts/geist-variable.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/style.css">
@@ -33,31 +33,126 @@
   </nav>
   <main id="main" class="legal">
     <div class="legal__container">
-        <span class="eyebrow">Finoro</span>
+      <section lang="de">
+        <p class="lang">Deutsch · <a href="#en">English</a></p>
         <h1>Datenschutzerklärung – Finoro</h1>
-        <p>Entwurf – wird im Finoro-Projekt geprüft und ergänzt.</p>
-        <h2>Verantwortlicher</h2>
-        <p><strong>Alexander Sinner</strong><br>
-          Erlenweg 25<br>
-          25899 Niebüll<br>
-          E-Mail: <a href="mailto:info@your-developer.de">info@your-developer.de</a></p>
-        <div class="legal__highlight">
-          <h2>Kurzfassung</h2>
-          <ul>
-            <li>Finoro ist ein Haushaltsbuch, das du selbst betreibst. Saez24 betreibt dafür keine Server und erhält keine Finanzdaten von dir.</li>
-            <li>Keine Werbung, keine Analyse- oder Tracking-Software.</li>
-            <li>Deine Daten liegen in der Datenbank deines eigenen Servers bzw. – im lokalen Modus der App – nur auf deinem Gerät.</li>
-          </ul>
-        </div>
-        <h2>Verbindungen</h2>
+        <p>Stand: 26. Oktober 2026</p>
+        <p>Finoro ist ein Haushaltsbuch, das du selbst betreibst: als Web-App auf deinem eigenen Server und als Android-App. Diese Erklärung beschreibt, welche Daten dabei verarbeitet werden – und welche nicht.</p>
+        <h2>Kurzfassung</h2>
         <ul>
-          <li><strong>Dein Finoro-Server</strong> – Web- und Android-App sprechen mit dem Server, den du (oder die Person, die ihn betreibt) einrichtest. Wer den Server betreibt, ist für die dort gespeicherten Daten verantwortlich.</li>
-          <li><strong>E-Mail-Bestätigung</strong> – bei der Registrierung verschickt dein Server eine E-Mail über den dort eingestellten Mail-Dienst.</li>
+        <li>Finoro hat <strong>keine zentralen Server</strong>. Der Entwickler erhält <strong>keine Daten</strong> von dir.</li>
+        <li>Es gibt <strong>keine Werbung und keine Analyse- oder Tracking-Software</strong>.</li>
+        <li>Deine Finanzdaten liegen <strong>auf deinem eigenen Server</strong> (Web-App, Servermodus der App) oder <strong>nur auf deinem Gerät</strong> (lokaler Modus der App).</li>
+        <li>Einzige Verbindung zu einem fremden Dienst: höchstens einmal am Tag eine Anfrage an GitHub, ob es eine neue Version gibt. Dabei wird – wie bei jeder Internetverbindung – deine IP-Adresse übertragen.</li>
         </ul>
+        <h2>Verantwortlicher</h2>
+        <p>Für die App und diese Erklärung:</p>
+        <p>Alexander Sinner<br>
+Erlenweg 25<br>
+25899 Niebüll<br>
+E-Mail: info@your-developer.de</p>
+        <p>Für die Daten auf einem Finoro-Server ist <strong>dessen Betreiber</strong> verantwortlich – also die Person, die den Server aufgesetzt hat. Wer einen Finoro-Server für andere betreibt, braucht dafür gegebenenfalls eine eigene Datenschutzerklärung.</p>
+        <h2>Finoro-Server (Web-App und Servermodus der App)</h2>
+        <p>Wenn du ein Konto auf einem Finoro-Server anlegst, speichert dieser in seiner Datenbank:</p>
+        <ul>
+        <li><strong>Konto:</strong> E-Mail-Adresse, optional ein Anzeigename, das Passwort nur als sicherer Hash (Argon2), Datum der Registrierung</li>
+        <li><strong>Finanzdaten:</strong> Konten, Kategorien, Buchungen, wiederkehrende Buchungen, Budgets und Kredite, die du anlegst oder importierst</li>
+        <li><strong>Einstellungen:</strong> Finanzmonat, ausgeblendete Menüpunkte, Aufbau der Übersicht</li>
+        <li><strong>Sicherheitsprotokoll:</strong> Anmeldungen, fehlgeschlagene Anmeldeversuche, Abmeldungen, Passwort- und Profiländerungen sowie das Anlegen, Ändern und Löschen von Einträgen – jeweils mit Zeitpunkt und IP-Adresse. Es dient dazu, Missbrauch zu erkennen. Finoro löscht es nicht automatisch; wird dein Konto gelöscht, bleiben die Einträge ohne Verbindung zu deinem Konto erhalten. Wie lange es aufbewahrt wird, legt der Betreiber fest.</li>
+        </ul>
+        <p>Jede Person sieht ausschließlich ihre eigenen Daten. Es gibt kein Administrations-Konto, das fremde Finanzdaten einsehen kann. Der Betreiber hat technisch aber Zugriff auf die Datenbank seines Servers.</p>
+        <p>Webserver und Reverse-Proxy des Betreibers können außerdem Zugriffsprotokolle mit IP-Adresse führen. Das legt der Betreiber fest, nicht Finoro.</p>
+        <h2>Anmeldung und Cookies</h2>
+        <p>Für die Anmeldung setzt der Server zwei technisch notwendige Cookies (finoro_access, finoro_refresh). Sie sind für Skripte nicht lesbar (HttpOnly), werden nur über HTTPS gesendet und dienen allein dazu, dich angemeldet zu halten. Es gibt keine Werbe- oder Tracking-Cookies.</p>
+        <h2>E-Mails</h2>
+        <p>Zur Bestätigung deiner E-Mail-Adresse und zum Zurücksetzen des Passworts verschickt der Server E-Mails über den E-Mail-Dienst, den der Betreiber eingerichtet hat. Nicht bestätigte Konten werden nach Ablauf der Bestätigungsfrist (standardmäßig 3 Tage) automatisch gelöscht.</p>
+        <h2>Löschen</h2>
+        <p>In den Einstellungen kannst du jederzeit alle deine Finanzdaten löschen oder dein Konto vollständig löschen. Dabei werden Konto, Finanzdaten und Einstellungen aus der Datenbank entfernt.</p>
+        <h2>Android-App</h2>
+        <p>Die App arbeitet in einem von zwei Modi:</p>
+        <ul>
+        <li><strong>Lokal</strong> (Standard): Alle Daten liegen in einer Datenbank auf deinem Gerät. Es gibt kein Konto und keine Verbindung zu einem Server.</li>
+        <li><strong>Servermodus:</strong> Die App verbindet sich mit dem Finoro-Server, dessen Adresse du eingibst. Dann gilt der Abschnitt „Finoro-Server“. Die Anmeldedaten (Tokens) speichert die App verschlüsselt im Schlüsselspeicher deines Geräts; die Server-Adresse und ein optional hinterlegtes Zertifikat liegen in den App-Einstellungen.</li>
+        </ul>
+        <h2>App-Sperre</h2>
+        <p>Wenn du die App-Sperre einschaltest, prüft Android deinen Fingerabdruck, dein Gesicht oder deine Geräte-PIN. Finoro erhält dabei nur das Ergebnis „entsperrt“ oder „nicht entsperrt“ – nie biometrische Daten.</p>
+        <h2>App-Updates</h2>
+        <p>Die App prüft höchstens einmal am Tag – und wenn du in den Einstellungen „Nach Updates suchen“ tippst – bei <a href="https://github.com/Saez24/Finoro-App">Finoro-App auf GitHub</a>, ob es eine neue Version gibt. Auf deinen Wunsch lädt sie das Update von GitHub herunter. GitHub erhält dabei deine IP-Adresse und die Angabe, welche App-Datei (Geräte-Architektur) geladen wird. Es gilt die <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung von GitHub</a>.</p>
+        <h2>Lokale Speicherung und Sicherung</h2>
+        <p>Auf dem Gerät speichert die App im lokalen Modus deine Finanzdaten, außerdem in beiden Modi Einstellungen wie Ansicht, Kontofilter, App-Sperre an/aus und den Zeitpunkt der letzten Update-Prüfung. Ist die Sicherung deines Betriebssystems eingeschaltet (Android-Backup), können diese Daten darin enthalten sein. Das steuert dein Betriebssystem, nicht Finoro.</p>
+        <h2>Import, Export und Teilen</h2>
+        <p>Exporte (CSV, XML) entstehen auf deinem Gerät; ob und wohin du sie weitergibst, entscheidest du über den Teilen-Dialog deines Systems. Importierte Dateien wählst du selbst aus; sie werden nur gelesen.</p>
+        <h2>Berechtigungen</h2>
+        <p>Internet (nur für Servermodus und Update-Prüfung), biometrische Entsperrung (nur für die App-Sperre) und „Unbekannte Apps installieren“ – ausschließlich, um die eigenen, geprüften Updates zu installieren. Keine Berechtigung wird zum Sammeln von Daten genutzt.</p>
+        <h2>Web-App im Browser</h2>
+        <p>Die Web-App speichert im Speicher deines Browsers nur Einstellungen: Darstellung (hell/dunkel), Sprache, Kontofilter der Buchungen und das Ergebnis der letzten Update-Prüfung. Höchstens einmal am Tag – und wenn du in den Einstellungen „Nach Updates suchen“ wählst – fragt sie bei GitHub nach einer neuen Version; dabei werden keine Cookies gesendet, GitHub erhält deine IP-Adresse.</p>
+        <h2>Rechtsgrundlagen</h2>
+        <p>Die Verarbeitung deiner Konto- und Finanzdaten ist nötig, damit Finoro funktioniert (Art. 6 Abs. 1 lit. b DSGVO). Sicherheitsprotokoll, Anmelde-Cookies und Update-Prüfung dienen der Sicherheit (Art. 6 Abs. 1 lit. f DSGVO). Daten auf deinem Gerät speichert die App, weil du die jeweilige Funktion nutzt.</p>
         <h2>Deine Rechte</h2>
-        <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der
-          Verarbeitung, Datenübertragbarkeit und Widerspruch sowie das Recht, dich bei einer
-          Datenschutz-Aufsichtsbehörde zu beschweren.</p>
+        <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Deine Finanzdaten kannst du jederzeit selbst exportieren und löschen. Für Daten auf einem Finoro-Server wende dich an dessen Betreiber, für Daten bei GitHub an GitHub. Du kannst dich außerdem bei einer Datenschutz-Aufsichtsbehörde beschweren.</p>
+        <h2>Änderungen</h2>
+        <p>Diese Erklärung wird angepasst, wenn sich Finoro ändert. Die aktuelle Fassung steht in der App unter Einstellungen → Über Finoro und unter <a href="https://saez24.github.io/finoro/datenschutz.html">saez24.github.io/finoro/datenschutz.html</a>.</p>
+      </section>
+      <section lang="en" id="en">
+        <p class="lang">English</p>
+        <h1>Privacy Policy – Finoro</h1>
+        <p>Last updated: 26 October 2026</p>
+        <p>Finoro is a household budget book you run yourself: as a web app on your own server and as an Android app. This policy describes which data is processed – and which is not.</p>
+        <h2>Summary</h2>
+        <ul>
+        <li>Finoro has <strong>no central servers</strong>. The developer receives <strong>no data</strong> from you.</li>
+        <li>There is <strong>no advertising and no analytics or tracking software</strong>.</li>
+        <li>Your financial data stays <strong>on your own server</strong> (web app, server mode of the app) or <strong>only on your device</strong> (local mode of the app).</li>
+        <li>The only connection to a third-party service: at most once a day a request to GitHub asking whether a new version exists. As with any internet connection, your IP address is transmitted.</li>
+        </ul>
+        <h2>Controller</h2>
+        <p>For the app and this policy:</p>
+        <p>Alexander Sinner<br>
+Erlenweg 25<br>
+25899 Niebüll, Germany<br>
+Email: info@your-developer.de</p>
+        <p>For the data on a Finoro server, <strong>its operator</strong> is responsible – the person who set up the server. Anyone running a Finoro server for others may need their own privacy policy for it.</p>
+        <h2>Finoro server (web app and server mode of the app)</h2>
+        <p>When you create an account on a Finoro server, it stores in its database:</p>
+        <ul>
+        <li><strong>Account:</strong> email address, optionally a display name, the password only as a secure hash (Argon2), date of registration</li>
+        <li><strong>Financial data:</strong> accounts, categories, bookings, recurring bookings, budgets and loans you create or import</li>
+        <li><strong>Settings:</strong> financial month, hidden menu items, layout of the overview</li>
+        <li><strong>Security log:</strong> sign-ins, failed sign-in attempts, sign-outs, password and profile changes as well as creating, changing and deleting entries – each with time and IP address. It serves to detect misuse. Finoro does not delete it automatically; if your account is deleted, the entries remain without a link to your account. How long it is kept is up to the operator.</li>
+        </ul>
+        <p>Every person sees only their own data. There is no administrator account that can view other people's financial data. The operator, however, has technical access to their server's database.</p>
+        <p>The operator's web server and reverse proxy may also keep access logs with IP addresses. That is up to the operator, not Finoro.</p>
+        <h2>Sign-in and cookies</h2>
+        <p>For sign-in the server sets two technically necessary cookies (finoro_access, finoro_refresh). They cannot be read by scripts (HttpOnly), are sent over HTTPS only and serve solely to keep you signed in. There are no advertising or tracking cookies.</p>
+        <h2>Emails</h2>
+        <p>To confirm your email address and to reset your password, the server sends emails through the email service the operator has set up. Unconfirmed accounts are deleted automatically when the confirmation period ends (3 days by default).</p>
+        <h2>Deletion</h2>
+        <p>In the settings you can delete all your financial data or your whole account at any time. This removes the account, financial data and settings from the database.</p>
+        <h2>Android app</h2>
+        <p>The app works in one of two modes:</p>
+        <ul>
+        <li><strong>Local</strong> (default): all data is stored in a database on your device. There is no account and no connection to a server.</li>
+        <li><strong>Server mode:</strong> the app connects to the Finoro server whose address you enter. The section "Finoro server" then applies. The app keeps the sign-in data (tokens) encrypted in your device's key store; the server address and an optionally added certificate are stored in the app settings.</li>
+        </ul>
+        <h2>App lock</h2>
+        <p>If you turn on the app lock, Android checks your fingerprint, face or device PIN. Finoro only receives the result "unlocked" or "not unlocked" – never biometric data.</p>
+        <h2>App updates</h2>
+        <p>At most once a day – and when you tap "Nach Updates suchen" in the settings – the app asks <a href="https://github.com/Saez24/Finoro-App">Finoro-App on GitHub</a> whether a new version exists. If you want, it downloads the update from GitHub. GitHub receives your IP address and which app file (device architecture) is downloaded. <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a> applies.</p>
+        <h2>Local storage and backup</h2>
+        <p>On the device the app stores your financial data in local mode, and in both modes settings such as the view, account filter, app lock on/off and the time of the last update check. If your operating system's backup is turned on (Android backup), this data may be included in it. That is controlled by your operating system, not by Finoro.</p>
+        <h2>Import, export and sharing</h2>
+        <p>Exports (CSV, XML) are created on your device; whether and where you pass them on is your decision via your system's share dialog. You pick imported files yourself; they are only read.</p>
+        <h2>Permissions</h2>
+        <p>Internet (only for server mode and the update check), biometric unlock (only for the app lock) and "install unknown apps" – solely to install its own verified updates. No permission is used to collect data.</p>
+        <h2>Web app in the browser</h2>
+        <p>The web app stores only settings in your browser's storage: appearance (light/dark), language, the account filter of the bookings and the result of the last update check. At most once a day – and when you choose "Check for updates" in the settings – it asks GitHub for a new version; no cookies are sent, GitHub receives your IP address.</p>
+        <h2>Legal bases</h2>
+        <p>Processing your account and financial data is necessary for Finoro to work (Art. 6(1)(b) GDPR). The security log, sign-in cookies and the update check serve security (Art. 6(1)(f) GDPR). The app stores data on your device because you use the respective feature.</p>
+        <h2>Your rights</h2>
+        <p>You have the right of access, rectification, erasure, restriction of processing, data portability and objection. You can export and delete your financial data yourself at any time. For data on a Finoro server, contact its operator; for data at GitHub, contact GitHub. You can also lodge a complaint with a data protection supervisory authority.</p>
+        <h2>Changes</h2>
+        <p>This policy is updated when Finoro changes. The current version is in the app under Einstellungen → Über Finoro and at <a href="https://saez24.github.io/finoro/datenschutz.html">saez24.github.io/finoro/datenschutz.html</a>.</p>
+      </section>
     </div>
   </main>
   <footer class="footer">
